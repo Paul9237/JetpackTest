@@ -46,7 +46,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
-    implementation 'com.alibaba:fastjson:1.2.73'
+    implementation 'com.google.code.gson:gson:2.8.6'
     kapt project(':libnavannotation')
     kapt project(':libnavcompiler')
     implementation project(":libnavannotation")

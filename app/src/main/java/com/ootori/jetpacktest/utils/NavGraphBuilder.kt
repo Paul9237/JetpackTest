@@ -17,7 +17,7 @@ object NavGraphBuilder {
         val navGraph = NavGraph(NavGraphNavigator(provider))
 
         val destConfig = AppConfig.destConfig
-        destConfig.values.forEach {
+        destConfig!!.values.forEach {
             if (it.isFragment) {
                 val dest = fragmentNavigator.createDestination()
                 dest.className = it.className

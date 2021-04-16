@@ -1,6 +1,6 @@
 package com.ootori.jetpacktest.model
 
-data class Destination(
+open class Destination(
     val asStarter: Boolean,
     val className: String,
     val id: Int,

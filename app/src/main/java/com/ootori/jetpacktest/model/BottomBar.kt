@@ -1,17 +1,17 @@
 package com.ootori.jetpacktest.model
 
 data class BottomBar(
-    val activeColor: String,
-    val inActiveColor: String,
-    val selectTab: Int,
-    val tabs: List<Tab>
+    var activeColor: String? = null,
+    var inActiveColor: String? = null,
+    var selectTab: Int = 0,
+    var tabs: List<Tab>? = null
 )
 
 data class Tab(
-    val enable: Boolean,
-    val index: Int,
-    val pageUrl: String,
-    val size: Int,
-    val tintColor: String,
-    val title: String
+    var enable: Boolean = true,
+    var index: Int = 0,
+    var pageUrl: String? = null,
+    var size: Int = 0,
+    var tintColor: String? = null,
+    var title: String? = null
 )

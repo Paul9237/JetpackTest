@@ -124,11 +124,11 @@ public class NavProcessor extends AbstractProcessor {
             }
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("id", id);
+            jsonObject.put("className", className);
+            jsonObject.put("isFragment", isFragment);
             jsonObject.put("pageUrl", pageUrl);
             jsonObject.put("needLogin", needLogin);
             jsonObject.put("asStarter", asStarter);
-            jsonObject.put("isFragment", isFragment);
-            jsonObject.put("className", className);
             outputMap.put(pageUrl, jsonObject);
         }
     }

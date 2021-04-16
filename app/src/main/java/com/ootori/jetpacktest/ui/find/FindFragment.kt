@@ -1,4 +1,4 @@
-package com.ootori.jetpacktest.ui.home
+package com.ootori.jetpacktest.ui.find
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,21 +11,21 @@ import androidx.lifecycle.ViewModelProvider
 import com.ootori.jetpacktest.R
 import com.ootori.libnavannotation.FragmentDestination
 
-@FragmentDestination(pageUrl = "main/tabs/home", asStarter = true)
-class HomeFragment : Fragment() {
+@FragmentDestination(pageUrl = "main/tabs/find")
+class FindFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var findViewModel: FindViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
+        findViewModel =
+            ViewModelProvider(this).get(FindViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_find, container, false)
         val textView: TextView = root.findViewById(R.id.tv_hello)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        findViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
