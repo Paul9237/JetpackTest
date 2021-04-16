@@ -1,0 +1,26 @@
+{
+  "main/tabs/dashboard": {
+    "isFragment": true,
+    "asStarter": false,
+    "needLogin": false,
+    "pageUrl": "main/tabs/dashboard",
+    "className": "com.ootori.jetpacktest.ui.dashboard.DashboardFragment",
+    "id": 77057929
+  },
+  "main/tabs/home": {
+    "isFragment": true,
+    "asStarter": true,
+    "needLogin": false,
+    "pageUrl": "main/tabs/home",
+    "className": "com.ootori.jetpacktest.ui.home.HomeFragment",
+    "id": 776683683
+  },
+  "main/tabs/notifications": {
+    "isFragment": true,
+    "asStarter": false,
+    "needLogin": true,
+    "pageUrl": "main/tabs/notifications",
+    "className": "com.ootori.jetpacktest.ui.notifications.NotificationsFragment",
+    "id": 697923377
+  }
+}
